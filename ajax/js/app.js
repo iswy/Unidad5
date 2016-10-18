@@ -10,6 +10,11 @@ var main = function ()
         console.log( "Alumno" + alumno );
     });
 
+    var $abc01 = JSON.stringify( $.getJSON("escuela/alumnos.json") );
+    var $abc = $("<p class='p1'>"+$abc01+"</p>");
+
+    $("main").append($abc);
+
     console.log( "Hello Words" );
 };
 
