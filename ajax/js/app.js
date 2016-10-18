@@ -5,6 +5,11 @@ var main = function ()
 {
     "use strict";
 
+    $.getJSON("escuela/alumnos.json", function ( alumno )
+    {
+        console.log( "Alumno" + alumno );
+    });
+
     console.log( "Hello Words" );
 };
 
