@@ -8,4 +8,4 @@ var main = function ()
     console.log( "Hello Words" );
 };
 
-$( document ).read( main );
+$( document ).ready( main );
