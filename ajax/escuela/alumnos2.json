@@ -1,0 +1,17 @@
+  {
+	"alumno":
+	[
+	  { "nombre": "Mary", "semestre": 0 },
+	  { "nombre": "Patricia", "semestre": 1 },
+	  { "nombre": "Linda", "semestre": 2 },
+	  { "nombre": "Barbara", "semestre": 4 },
+	  { "nombre": "Elizabeth", "semestre": 5 },
+	  { "nombre": "Jennifer", "semestre": 6 },
+	  { "nombre": "Maria", "semestre": 7 },
+	  { "nombre": "Susan", "semestre": 8 },
+	  { "nombre": "Margaret", "semestre": 9 },
+	  { "nombre": "Dorothy", "semestre": 10 },
+	  { "nombre": "Lisa", "semestre": 11 },
+	  { "nombre": "Nancy", "semestre": 12 }
+	]
+  }

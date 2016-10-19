@@ -7,7 +7,7 @@ var jsonx = function ( alumno )
     console.log( "Alumno" + alumno );
 
     var $pAlumno = $("<p>");
-    $pAlumno.text( alumno.nombre + " -|- " + alumno.semestre )
+    $pAlumno.text( alumno.nombre + " -|- " + alumno.semestre );
 
     //var $pTe = $("<p>");
     //$pTe.text('x');
@@ -17,7 +17,7 @@ var jsonx = function ( alumno )
 
     for(var i=0; i<128; i++)
     {
-        $list_item.text("hello "+i);
+        $list_item.text("hello " + i + JSON.stringify(alumno));
         $lista.append($list_item.clone());
     }
 
@@ -35,11 +35,24 @@ var jsonx = function ( alumno )
 
 }
 
+
+var jsony = function ( alumnos )
+{
+    var alu = $.parseJSON(alumnos);
+
+    var $pAlumno = $("<p>");
+    $pAlumno.text( " hi " + alu.get(0).toString() );
+
+    $("main").append( $pAlumno );
+
+}
+
 var main = function ()
 {
     "use strict";
 
-    $.getJSON("escuela/alumnos.json", jsonx );
+    //$.getJSON("escuela/alumnos.json", jsonx );
+    $.getJSON("escuela/alumnos2.json" , jsony);
 
     //var $abc01 = JSON.stringify( $.getJSON("escuela/alumnos.json") );
     //var $abc = $("<p class='p1'>"+$abc01+"</p>");
