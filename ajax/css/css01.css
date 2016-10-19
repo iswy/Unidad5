@@ -1,0 +1,28 @@
+*
+{
+	font-size: 32pt;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: antiquewhite;
+	color:black;
+}
+
+header,main,footer
+{
+	padding: 28px;
+}
+
+header
+{
+	background-color: darkslategray;
+	color: ghostwhite;
+}
+p
+{
+	background-color: rgba(50,50,50,.3);
+	padding: 12px;
+	margin-bottom: 28px;
+}
