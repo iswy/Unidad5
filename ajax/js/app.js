@@ -38,13 +38,37 @@ var jsonx = function ( alumno )
 
 var jsony = function ( alumnos )
 {
-    var alu = $.parseJSON(alumnos);
+    var $alu = alumnos;
 
-    var $pAlumno = $("<p>");
-    $pAlumno.text( " hi " + alu.get(0).toString() );
+    var $lista = $("<ul>");
+    var $list_item = $("<li>");
 
-    $("main").append( $pAlumno );
+    for(var i=0; i<$alu.length; i++)
+    {
+        var $alu_nom = $alu[i]["nombre"];
+        var $alu_sem = $alu[i]["semestre"];
 
+        var $mongo = $("<div>");
+        $mongo.addClass("mongo");
+
+        var $m2 = $mongo.clone();
+
+        $mongo.text($alu_nom);
+
+        $list_item = $("<li>");
+
+        $list_item.append("nombre: ")
+        $list_item.append($mongo)
+
+        $m2.text($alu_sem);
+
+        $list_item.append(" &nbsp; Semestre: ")
+        $list_item.append($m2);
+
+
+        $lista.append($list_item.clone());
+    }
+    $("main").append($lista);
 }
 
 var main = function ()
@@ -52,7 +76,7 @@ var main = function ()
     "use strict";
 
     //$.getJSON("escuela/alumnos.json", jsonx );
-    $.getJSON("escuela/alumnos2.json" , jsony);
+    $.getJSON( "escuela/alumnos2.json" , jsony );
 
     //var $abc01 = JSON.stringify( $.getJSON("escuela/alumnos.json") );
     //var $abc = $("<p class='p1'>"+$abc01+"</p>");

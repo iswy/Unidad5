@@ -1,6 +1,4 @@
-  {
-	"alumno":
-	[
+[
 	  { "nombre": "Mary", "semestre": 0 },
 	  { "nombre": "Patricia", "semestre": 1 },
 	  { "nombre": "Linda", "semestre": 2 },
@@ -13,5 +11,4 @@
 	  { "nombre": "Dorothy", "semestre": 10 },
 	  { "nombre": "Lisa", "semestre": 11 },
 	  { "nombre": "Nancy", "semestre": 12 }
-	]
-  }
+]

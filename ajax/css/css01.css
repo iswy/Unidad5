@@ -52,3 +52,12 @@ li:nth-of-type(even)
 {
 	background-color: rgba(30,30,160,.2);
 }
+
+.mongo
+{
+	display: inline-block;
+	border: 2px solid darkred;
+	background-color: aliceblue;
+	padding: 12px;
+	margin-left: 12px;
+}
