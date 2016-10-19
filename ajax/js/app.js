@@ -9,19 +9,29 @@ var jsonx = function ( alumno )
     var $pAlumno = $("<p>");
     $pAlumno.text( alumno.nombre + " -|- " + alumno.semestre )
 
-    var $pTe = $("<p>");
+    //var $pTe = $("<p>");
+    //$pTe.text('x');
 
-    $("main").append($pAlumno);
+    var $lista = $("<ul>");
+    var $list_item = $("<li>");
 
-    var i=0;
-    var x="";
-
-    for( ; i<10; i++ )
+    for(var i=0; i<128; i++)
     {
-        x += $pTe.text( "hello "+i );
+        $list_item.text("hello "+i);
+        $lista.append($list_item.clone());
     }
-    $("main").append(x);
 
+    $("main").append($lista);
+    //$("main").append($pAlumno);
+
+    /*
+    for(var i=0; i<10; i++)
+    {
+        $pTe.text('hello '+i);
+
+        $( "main" ).append( $pTe.clone() );
+    }
+    */
 
 }
 
@@ -40,7 +50,7 @@ var main = function ()
     Tarea:
         * Modificar el JSON para contener un arreglo de alumnos
         * Modificar este JS para agregar los alumnos a una lista no-ordenada
-        * Agregar un archivo CSS para presentación.
+        * Agregar un archivo CSS para presentación. (listo)
         * extra: agregar animaciones
      */
 

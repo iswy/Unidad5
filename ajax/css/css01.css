@@ -22,7 +22,32 @@ header
 }
 p
 {
-	background-color: rgba(50,50,50,.3);
 	padding: 12px;
-	margin-bottom: 28px;
+	/*margin-bottom: 28px;*/
+}
+p:nth-of-type(odd)
+{
+	background-color: rgba(160,30,30,.2);
+}
+p:nth-of-type(even)
+{
+	background-color: rgba(30,30,160,.2);
+}
+p:first-child
+{
+	background-color: aquamarine;
+}
+
+li
+{
+	padding: 12px;
+	margin-left: 28px;
+}
+li:nth-of-type(odd)
+{
+	background-color: rgba(160,30,30,.2);
+}
+li:nth-of-type(even)
+{
+	background-color: rgba(30,30,160,.2);
 }
