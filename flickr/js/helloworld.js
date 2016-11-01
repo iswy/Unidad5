@@ -2,6 +2,15 @@
  * Created by pi on 16.10.20.
  */
 
+var mostrar = function(url)
+{
+    var $img = $("<img>");
+
+    $img.attr("src",url);
+
+    $("#content").append($img);
+}
+
 var main = function()
 {
     "use strict";
@@ -14,8 +23,10 @@ var main = function()
     {
         console.log(flickerResponse);
 
-        flickerResponse.item.forEach( function(photo){
-            console.log(photo);
+        flickerResponse.items.forEach( function(photo)
+        {
+            //console.log(photo.media.m);
+            mostrar(photo.media.m);
         } );
 
     });
