@@ -8,7 +8,7 @@ var mostrar = function(url)
 
     $img.attr("src",url);
 
-    $("#content").append($img);
+    $("main .photos").append($img);
 }
 
 var main = function()
