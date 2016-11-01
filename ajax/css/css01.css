@@ -60,4 +60,5 @@ li:nth-of-type(even)
 	background-color: aliceblue;
 	padding: 12px;
 	margin-left: 12px;
+	font-size: 1.2em;
 }

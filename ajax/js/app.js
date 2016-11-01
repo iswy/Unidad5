@@ -43,6 +43,7 @@ var jsony = function ( alumnos )
     var $lista = $("<ul>");
     var $list_item = $("<li>");
 
+    // foreach
     for(var i=0; i<$alu.length; i++)
     {
         var $alu_nom = $alu[i]["nombre"];
@@ -55,13 +56,12 @@ var jsony = function ( alumnos )
 
         $mongo.text($alu_nom);
 
-        $list_item = $("<li>");
+        $list_item = $("<li>");//.hide().fadeIn(600);
 
         $list_item.append("nombre: ")
         $list_item.append($mongo)
 
         $m2.text($alu_sem);
-
         $list_item.append(" &nbsp; Semestre: ")
         $list_item.append($m2);
 
