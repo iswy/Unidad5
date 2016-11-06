@@ -9,13 +9,21 @@ var mostrar = function(url)
     $img.attr("src",url);
 
     $("main .photos").append($img);
-}
+};
+
+/*
+    >> Estamos comsumiendo un API
+    >>
+
+    (1) Poner un campo para recuperar imágenes
+    (2) Poner animaciones a cada $img
+ */
 
 var main = function()
 {
     "use strict";
 
-    var url = "http://api.flickr.com/services/feeds/photos_public.gne?tags=dogs&format=json&jsoncallback=?";
+    var url = "http://api.flickr.com/services/feeds/photos_public.gne?tags=forest&format=json&jsoncallback=?";
 
     //console.log("Hello World");
 
